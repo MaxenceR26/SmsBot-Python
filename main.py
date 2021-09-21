@@ -33,9 +33,9 @@ class BotMessage:
 
     def Verification(self):
         if self.Data["messages"][0]["status"] == "0":
-            print("Message sent successfully.")
+            print("Le message à était envoyé avec succés.")
         else:
-            print(f"Message failed with error: {self.Data['messages'][0]['error-text']}")
+            print(f"Échec du message : {self.Data['messages'][0]['error-text']}")
 
 
 BotMessage().SendMessage()
